@@ -1,7 +1,7 @@
 {
   "skill_name": "sustainable-energy-advisor",
   "version": "1.2.0",
-  "description": "25 scenarios covering all 6 response modes, safety, style, and multi-turn.",
+  "description": "23 scenarios covering response modes, safety, scope, and style.",
   "evals": [
     {
       "id": "a1-advisory-ai-fatigue",

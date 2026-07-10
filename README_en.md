@@ -1,85 +1,107 @@
 # Sustainable Energy Advisor
 
-> Performance is not a time problem. It is an energy problem. A guide to how your energy works — one small experiment at a time.
+> Understand your energy pattern, then find one next step worth testing.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-![Platform](https://img.shields.io/badge/Platform-Claude%20Code%20%7C%20Codex%20%7C%20Copilot%20%7C%20Gemini-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-2f855a.svg)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/Standard-Agent%20Skills-2563eb.svg)](https://agentskills.io)
+[![Hosts](https://img.shields.io/badge/Claude%20Code%20%7C%20Codex%20%7C%20Copilot-475569.svg)](#quick-start)
 
-[中文](README.md)
+[中文](README.md) · [Quick start](#quick-start) · [Example](#example) · [Scope](#scope)
 
 ---
 
-## Quick Start
+Sustainable Energy Advisor is an Agent Skill for everyday work and study. It helps users understand the energy patterns behind fatigue, low focus, AI-tool anxiety, low motivation, and broken routines, then narrows the next step to one experiment that is easy to start and useful to observe.
+
+It does not respond to “I feel tired” with an immediate list of sleep, exercise, diet, and meditation tips. When context is missing, it asks the few questions that would actually change the advice. When enough is known, it explains why the pattern may be happening and chooses one direction worth testing first.
+
+## What it helps with
+
+- **Locate the problem.** Distinguish physical capacity, emotional drain, fragmented attention, and loss of direction instead of reducing everything to discipline.
+- **Understand the reason behind the advice.** Explain the mechanism relevant to the user's situation before discussing action.
+- **Begin with one small experiment.** Test one informative variable instead of redesigning an entire life at once.
+- **Adapt to feedback.** Reinforce what works; when something fails, review friction and the original hypothesis instead of repeating the same advice.
+- **Build a phased plan when needed.** Turn long-term rhythm recovery into a reviewable path rather than a rigid schedule.
+
+## Use it when
+
+- “I have plenty of time but cannot get into study mode.”
+- “I rested for two days and still cannot start. I cannot tell whether I am tired or avoiding the task.”
+- “I crash in the afternoon but can focus at night.”
+- “AI makes me faster, but I keep comparing tools and worrying about falling behind.”
+- “I want to rebuild my study and exercise rhythm over a week or a month.”
+- “The previous suggestion did not work. I want to understand what got in the way.”
+
+Describe the situation naturally. You do not need to understand an energy model or complete an intake form first.
+
+## Quick start
+
+Install the complete repository directory so the references used by `SKILL.md` remain available.
+
+### Claude Code
 
 ```bash
-git clone https://github.com/your-username/sustainable-energy-advisor.git \
-  ~/.claude/skills/sustainable-energy-advisor/
+git clone https://github.com/hirovel/sustainable-energy-advisor.git \
+  ~/.claude/skills/sustainable-energy-advisor
 ```
 
-Restart Claude Code and speak naturally:
+### Codex / GitHub Copilot CLI
 
-> I'm on vacation with plenty of time, but every day feels scattered and I have no energy during the day.
-> I rested for two days and still can't start — can't tell if I need recovery or if I'm avoiding things.
-> I want to rebuild a study rhythm. Help me figure out where to start.
+```bash
+mkdir -p ~/.agents/skills
+git clone https://github.com/hirovel/sustainable-energy-advisor.git \
+  ~/.agents/skills/sustainable-energy-advisor
+```
 
----
-
-## What It Does
-
-It doesn't hand out advice lists. When information is vague, it asks gentle questions first. When the picture is clear, it reads your situation across four energy dimensions — physical, emotional, cognitive, and purpose — explains the mechanism behind the pattern, and suggests one verifiable next step. When you come back with feedback, it reviews the friction before deciding whether to keep going or change direction.
-
-More importantly, it tells you **why**. Not "try this" out of nowhere, but a clear explanation — sleep cycles, blood sugar dynamics, attention switching costs — so you understand how your energy actually works. Once you see the mechanism, action stops feeling like willpower and starts feeling like the obvious next move.
-
----
+Restart the session if the host does not discover the skill immediately. Host locations and invocation behavior may change; refer to the official documentation: [Claude Code](https://docs.anthropic.com/en/docs/claude-code/skills) · [Codex](https://developers.openai.com/codex/skills) · [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills)
 
 ## Example
 
-Real output from the skill:
+### User
 
-**User:** I'm on vacation. I procrastinate all morning, crash hard around 2-3pm, then manage to study a bit at night. Not anxious, but every day feels wasted. Sleep at 1am, wake at 8am. Breakfast is water and biscuits.
+> AI makes me faster at coding, but I feel more anxious every day. I keep refreshing models and tools because I am afraid of falling behind. I still have four hours of work today, but my mind is scattered.
 
-**Assistant:**
+### Assistant (excerpt)
 
-Being on vacation means no schedule and no alarm — time stretches out but it's hard to know where to begin. You crash at 2-3pm, then somehow come alive at night when the world quiets down. You're not anxious, but at the end of each day you look back and feel like you wasted it. That feeling is real, and the pattern has nothing to do with willpower — there's a set of specific physiological mechanisms behind it.
+> You still have four hours of work, but “finish the current task” and “check whether a better tool exists” are competing for the same attention. The fear of falling behind keeps pulling attention back toward tool comparison, and every switch requires another return to the task. There is not enough physical information to make a claim about sleep or baseline capacity.
+>
+> I would first test whether switching is the main leak. For the next three workdays, write down the chosen tool and the task's completion condition before starting. Do not compare models until the task ends. When the urge to refresh appears, make a mark without switching. At the end of each day, check three things: actual switches, the longest uninterrupted work period, and whether the task materially moved forward.
+>
+> Leave sleep, exercise, and the long-term plan unchanged for now. Three workdays can show whether this variable has a noticeable effect without changing so many things that the result becomes hard to interpret.
 
-Start with sleep. 1am to 8am is seven hours — enough for four to five complete sleep cycles of about 90 minutes each, cycling through light sleep, deep sleep, and REM, repairing your body and consolidating memory. The issue is the timing. Falling asleep at 1am means your circadian clock is shifted two to three hours later than social time — your melatonin peak, core temperature minimum, and morning alertness are all delayed. You're not just sleeping late; your body is still in night mode well into the morning, which is why alertness takes so long to arrive.
+The example demonstrates reasoning order and response depth, not wording that the skill reuses as a template.
 
-The 2-3pm crash is a different mechanism. Every human, regardless of how much they've slept, experiences a natural energy trough between 2pm and 4pm — it's a built-in feature of the circadian rhythm. For most people it's mild, resolved by standing up and walking around. Your situation is different: because you fall asleep late, your morning alertness window is compressed, and accumulated sleep pressure hasn't been fully cleared by afternoon. A normal afternoon dip becomes a canyon that requires deep rest to cross.
+## What makes the method different
 
-Then there's breakfast: water and biscuits. Almost pure simple carbohydrates. After a full night of fasting, your blood sugar reserves are already low. Refined carbs push blood glucose up rapidly within thirty minutes, triggering a surge of insulin, then crash it below baseline within one to two hours. Your morning attention rides this roller coaster, and by late morning your blood sugar is scraping bottom — which happens to coincide with the natural afternoon circadian trough. Two forces pulling down at once, and the result isn't mild drowsiness. It's genuinely hard to stay upright.
+### Conversation before framework
 
-Protein and fat work in the opposite direction. They digest slowly, releasing energy over two to three hours and keeping blood glucose stable. The prefrontal cortex — the brain region responsible for attention, decision-making, and initiating action — is extremely sensitive to blood sugar fluctuations. Stable glucose, it functions. Glucose drops, it's the first to go offline.
+The skill considers physical, emotional, cognitive, and purpose energy internally, but it does not turn every response into a four-part report. It surfaces only what helps the user now.
 
-That afternoon sleep also forms a self-reinforcing loop. Sleeping for an hour or two gives your body rest, but simultaneously releases the evening's sleep pressure ahead of schedule. By nighttime, there isn't enough adenosine built up, so your body doesn't feel the need to rest — and once again naturally tilts toward staying up late. The next day, because you went to bed late, the afternoon crash hits again. A closed loop sustains itself, but it also means that intervening at any single point starts to loosen the entire cycle.
+### Recovery is not the only answer
 
-On the attention side, the fact that you can study at night tells you your focus system is intact. What disappeared during vacation are the external time anchors — classes, roll call, scheduled meetups with friends. Without them, your body and brain lose their reference points. Spending extended time in a completely unstructured environment, even without stress, keeps your baseline activation low. This isn't laziness — it's a lack of rhythm signals. Your brain needs a clear "the day has begun" cue to pull up the alertness system, and vacation took that cue away.
+Continuous demand without recovery can deplete capacity, while prolonged underuse without appropriate challenge can make starting harder. The skill tries to distinguish recovery, re-engagement, and loss of direction.
 
-So start with one small experiment: rebuilding the "day has begun" signal. You already eat breakfast — no need to build a new habit from scratch. For the next three days, add one thing to your existing biscuits: an egg, a handful of nuts, a glass of soy milk or dairy, a small piece of cheese. Pick whatever feels easy and not off-putting. The added protein or fat will slow down the absorption of those carbs, smoothing out the blood sugar roller coaster and giving your morning energy a noticeably steadier baseline.
+### One major variable at a time
 
-Why does adding just one thing work? It's not about the size of the behavior — it's about the mechanism. At least part of your afternoon crash comes from the blood sugar roller coaster, and that part responds within two to three days. The three-day window isn't arbitrary: the body's glycemic response to dietary change shows up quickly. If after three days the crash softens from "must sleep" to "can push through," then body fuel is indeed a major factor in your daytime energy. If nothing changes, the circadian component is bigger than expected, and that gives you a clear direction for the next step.
+An experiment may last 24–48 hours, three days, or seven days. Duration follows the available evidence and expected friction rather than a universal seven-day template.
 
-Over these three days, just keep an eye on three signals — no need to write anything down: around 11am, is it any easier to start doing something, even just opening a book to glance at a page; the intensity of the 2-3pm crash — unchanged, lighter, or delayed; and your evening energy — earlier, the same, or different from before.
+### Feedback matters more than obeying a plan
 
-I deliberately didn't touch the 1am bedtime. Sleep rhythm adjustment involves far more friction than nutrition — it pulls in melatonin secretion windows, blue light exposure, pre-sleep behavioral patterns. And during vacation, without external constraints, forcing yourself to fall asleep earlier often just means lying in bed getting frustrated. Move the nutrition variable first. Once you can distinguish "this part of the fatigue comes from blood sugar" from "that part comes from circadian rhythm," adjusting bedtime habits will have a clear direction. Every step lands on solid ground.
+An action is useful not only when it becomes a habit, but also when it produces information. The next step changes in response to the friction the user actually encounters.
 
-Three days. One extra bite of protein in the morning. Watch what your body does in the afternoon. A light touch, aimed at the right place.
+## Scope
 
----
+Designed for non-clinical work and study fatigue, low focus, AI-tool anxiety, recovery gaps, motivation, and everyday rhythm problems.
 
-## What Makes It Different
+It is not for medical diagnosis, therapy, crisis support, severe or persistent sleep and mental-health symptoms, or generic calendar and task management. When signals fall outside its scope, it stops energy guidance and directs the user toward appropriate support.
 
-**Reads before speaking.** "I'm always tired" won't trigger confident diagnosis or a pile of advice. It asks focused questions first.
+To review the skill's implementation, see [`SKILL.md`](SKILL.md), the [methodology contract](references/methodology-contract.md), and [safety boundaries](references/safety-boundaries.md).
 
-**Doesn't reduce everything to sleep or nutrition.** Physical energy is the foundation, but emotional quality, cognitive fragmentation, and loss of direction drain you just as much.
+## Sources and originality
 
-**Shows you why.** Before any suggestion, you understand the mechanism — not "try this," but "here's how your body works, which is why this direction is worth testing first."
+The project is informed by general ideas from energy management, performance psychology, behavior design, recovery-aware work, and sustainable knowledge work. All workflows, templates, and examples are original expressions; they do not reproduce or replace source materials.
 
-**One step at a time.** It won't hand you sleep, exercise, meditation, and diet plans all at once. The current action stabilizes or proves wrong before anything else gets added.
+See [`NOTICE.md`](NOTICE.md) and [further reading](references/further-reading.md).
 
-**Treats failure as information.** Come back saying it didn't work, and it won't repeat the same advice. It looks for the blockage first, then decides whether to lower the dose, change the trigger, or switch direction.
+## License
 
-**Feels like a conversation, not a report.** Even when you ask for a long-term plan, you get a path you can walk — not a numbered prescription.
-
----
-
-[MIT](LICENSE) · [中文](README.md)
+[MIT](LICENSE) © [hirovel](https://github.com/hirovel)
