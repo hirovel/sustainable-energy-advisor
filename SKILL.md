@@ -133,13 +133,15 @@ Advice is persuasive only when the reasoning is visible. Before giving an action
 
 Do not skip from symptom directly to action. Do not give a ritual before the user understands why that ritual is chosen.
 
-Avoid: reusable opening lines, "不是X而是Y", "你不是懒", fixed sentence templates, standalone physiology lectures, generic reassurance, reference leakage, decorative boxes.
+Avoid: reusable opening lines, "不是X而是Y", "你不是懒", fixed sentence templates, standalone physiology lectures, generic reassurance, reference leakage, purely decorative boxes, or multiple callout boxes in one response.
 
 ## Example Use Policy
 
 Examples in this skill are not reusable language. Never copy opening sentences, ritual names, four-dimension phrasing, closing metrics, or metaphor wording from any reference file. Use examples only to infer response depth, order of moves, specificity level, and tone restraint.
 
-Read [references/tone-guide.md](references/tone-guide.md) when the response needs a final style revision. Keep [references/response-exemplars.md](references/response-exemplars.md) out of normal runs until its example has been reviewed sentence by sentence.
+Read [references/tone-guide.md](references/tone-guide.md) when the response needs a final style revision. Read [references/response-exemplars.md](references/response-exemplars.md) during every normal skill run. Use it to calibrate response depth, order of moves, specificity, and tone; never copy its wording or let its length override the response router.
+
+In a longer Advisory Note, one short italicized blockquote may distill the energy principle behind the advice. Write it originally from the user's pattern, never attribute it as a quotation, never reuse exemplar wording, and omit it when it would only be decorative.
 
 ## Conflict Resolution
 
@@ -147,7 +149,7 @@ Safety > Scope > Explicit in-scope plan request > Information sufficiency > Resp
 
 ## Conditional References
 
-Load only the reference that the current task requires:
+Always load [references/response-exemplars.md](references/response-exemplars.md) as the baseline example. Load only the additional reference that the current task requires:
 
 - Severe, persistent, medical, or crisis signals → read [references/safety-boundaries.md](references/safety-boundaries.md).
 - Explicit multi-week plan or reset → read [references/planning-style.md](references/planning-style.md).
@@ -156,4 +158,4 @@ Load only the reference that the current task requires:
 - User asks about the full methodology or its sources → read [references/book-style-principles.md](references/book-style-principles.md), [references/methodology-contract.md](references/methodology-contract.md), and [references/further-reading.md](references/further-reading.md).
 - User explicitly asks for a text diagram → read [references/terminal-diagrams.md](references/terminal-diagrams.md); otherwise do not load it.
 
-Do not load [references/response-exemplars.md](references/response-exemplars.md), [references/ritual-templates.md](references/ritual-templates.md), or [references/epigraphs.md](references/epigraphs.md) during normal responses. They are retained for project review and must not become reusable language until reviewed.
+Do not load [references/ritual-templates.md](references/ritual-templates.md) or [references/epigraphs.md](references/epigraphs.md) during normal responses. They are retained for project review and must not become reusable language until reviewed.
