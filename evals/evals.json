@@ -1,6 +1,6 @@
 {
   "skill_name": "sustainable-energy-advisor",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "23 scenarios covering response modes, safety, scope, and style.",
   "evals": [
     {

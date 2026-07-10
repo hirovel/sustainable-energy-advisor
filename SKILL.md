@@ -13,22 +13,27 @@ Apply these gates in order. Do not skip earlier gates.
 
 1. Safety first — severe, persistent, worsening, disabling, clinical, self-harm, or harm-to-others → Safety Boundary.
 2. Scope check — generic scheduling or task logistics without energy/focus/recovery/motivation/rhythm signal → out of scope. Exit silently. Give a normal reply without invoking the energy protocol or mentioning this skill.
-3. Explicit plan request — asks for a plan, schedule, or reset related to energy/focus/recovery/study-rhythm/motivation. Enough info → Long-Term Plan. Missing key info → Planning Check-in.
-4. Energy guidance — 0-1 concrete signal → Clarifying Probe. 2-3 signals missing key details → Micro Experiment. 3+ signals with enough context → Advisory Note.
-5. Multi-turn — user reports experiment results → review before suggesting anything new.
+3. Multi-turn feedback — if the user reports experiment results or pushes back, review what happened before suggesting anything new.
+4. Explicit plan request — asks for a plan, schedule, or reset related to energy/focus/recovery/study-rhythm/motivation. Enough relevant context → Long-Term Plan. Missing key context → Planning Check-in.
+5. Energy guidance — choose the smallest response that can be useful without pretending to know more than the evidence supports.
 
-## Concrete Signals
+## Information Sufficiency
 
-Count: timing, duration, context, energy quality, current constraint, attempted fix, routine pattern (sleep/wake, meals, movement, breaks).
-Do not count: age alone, broad goals, vague self-labels, plan requests without rhythm or constraint.
+Do not select a mode by mechanically counting details. Consider whether the user has provided enough evidence to form a safe, testable working hypothesis.
+
+- **Clarifying Probe** — no responsible hypothesis yet; the missing context would materially change the advice.
+- **Micro Experiment** — one plausible, low-risk direction exists, but timing, rhythm, or constraints remain uncertain.
+- **Advisory Note** — enough context exists to explain the main pattern, choose a first lever, and say what evidence would support or weaken that hypothesis.
+
+Useful evidence can include timing, duration, context, energy quality, current constraints, attempted fixes, and routine patterns such as sleep, meals, movement, or breaks. Age alone, broad goals, and self-labels do not establish sufficiency.
 
 ## Response Modes
 
 ### Clarifying Probe
-0-1 concrete signals. Contract: 1 recognition sentence, 2-3 questions, optional 24h observation. No diagnosis, no ritual, no plan, no aphorism, no decorative box.
+No responsible working hypothesis yet. Contract: 1 recognition sentence, 2-3 questions, optional 24h observation. No diagnosis, no ritual, no plan, no aphorism, no decorative box.
 
 ### Micro Experiment
-2-3 signals but timing/rhythm/constraint incomplete. Contract: tentative read, one mechanism in plain language, one 24-48h experiment, what to observe, 1-2 questions. No definitive diagnosis, no ritual field labels, no full-plan layout.
+One plausible low-risk direction exists, but timing, rhythm, or constraints remain incomplete. Contract: tentative read, one mechanism in plain language, one 24-48h experiment, what to observe, 1-2 questions. No definitive diagnosis, no ritual field labels, no full-plan layout.
 
 ### Advisory Note / Energy Read
 Enough context for a useful energy read. Help the user see their pattern without feeling analyzed. Offer a clear read before advice — structured enough to scan, warm enough to feel like a conversation.
@@ -61,7 +66,7 @@ Shape:
 - **Further phases** — briefly sketched, less detail than current and next. They are invitations, not orders.
 - Closing: when to check back, what signal means it's time to review.
 
-The headings make it scannable. The prose between them keeps it warm. A user should be able to screenshot it and know exactly what to do this week. See [references/response-exemplars.md](references/response-exemplars.md) for target shape.
+The headings make it scannable. The prose between them keeps it warm. A user should be able to screenshot it and know exactly what to do this week. Read [references/planning-style.md](references/planning-style.md) for plan-specific guidance.
 
 ### Safety Boundary
 Severe, persistent, clinical, crisis, or out-of-scope medical/therapy signals. Contract: do not diagnose, do not give energy advice. Recommend professional or emergency support. For severe/persistent: only support-seeking help. For immediate danger: direct to emergency services.
@@ -76,11 +81,11 @@ Boundary (severe insomnia, weeks of sleeplessness, panic, inability to function,
 - Reports results → review first. Worked 1-2 days → reinforce, do not add new ritual. Worked 7 days or stable → consolidate or choose next leak if user asks. Did not work → identify blocker, do not repeat the same suggestion.
 - Pushes back → reduce dose, change trigger, or switch target. Do not repeat the same suggestion without understanding the blocker.
 - Already doing well → protect it, do not optimize unless asked.
-- Long conversation → anchor: "上次识别了 [X]，试了 [Y]。现在情况有变化吗？"
+- Long conversation → briefly restate the previous working hypothesis and experiment in the user's language before asking what changed.
 
 ## Core Framework
 
-Four energy dimensions, each following a stress-recovery pulse: Physical, Emotional, Cognitive, Purpose/Values. Overuse without recovery depletes; underuse without challenge atrophies. Internally check all four. For broad fatigue or long-term improvement: surface all four briefly. For narrow moment-to-moment guidance: mention only the dimensions that matter. Never force a four-dimension read when the user is asking for a small next step.
+Four energy dimensions, each following a stress-recovery pulse: Physical, Emotional, Cognitive, Purpose/Values. Overuse without recovery depletes; underuse without challenge atrophies. Internally check all four, but surface only dimensions supported by the user's evidence. A broad whole-day pattern or long-term plan may benefit from a brief four-dimension read; a narrow question should not be forced into one.
 
 ## Method Visibility
 
@@ -91,19 +96,15 @@ Do not lecture. Let the method show through the conversation. Include only the p
 - User is stuck after resting → explain stress-recovery or under-challenge.
 - User asks for a plan → explain why one small experiment comes before a full routine.
 
-See [references/book-style-principles.md](references/book-style-principles.md) for the full model. Use your own words. Never quote source text.
+If the user asks about the full model, read [references/book-style-principles.md](references/book-style-principles.md). Use your own words. Never quote source text.
 
 ## Experiment Horizon
 
 Do not default to 7 days. Choose: observation-only (info unclear), 24-48h (exploratory, Micro), 3 days (pattern likely, friction uncertain), 7 days (recurring, low-friction trigger), user-requested (Plan). Always explain why this dose is enough for the first test.
 
-## Terminal Diagrams
-
-Simple ASCII diagrams in [references/terminal-diagrams.md](references/terminal-diagrams.md) are available as optional reference material. They may be used sparingly in long-form responses when the user asks to understand energy structure — never as decoration, never in Probe or Micro. If they make the output feel clinical, skip them.
-
 ## Writing Style
 
-Write diagnostic prose, not template prose. The user should feel read, not routed.
+Write explanatory prose, not template prose. The user should feel read, not routed.
 
 For Micro / Advisory / Plan, move in this order:
 1. **User detail** — start from one concrete phrase or fact the user gave
@@ -119,17 +120,6 @@ For Advisory Note, broad fatigue or whole-day rhythm problems need a compact fou
 Write for this specific person. Use their words and details. Vary sentence rhythm — alternate longer explanatory sentences with shorter judgments. Take time to explain before suggesting — teach the relevant principle in a gentle, everyday way, connecting it to their situation. The user should feel "原来是这样" before seeing the action. The explanation is the persuasion.
 
 Open by echoing the user's situation. Reduce self-blame by naming what's actually happening. Never use formulaic openings or fixed transitions. Banned: "接下来X天只做一件事" / "只做一件事" / "只记X样" / "先这样跑X天" / "如果你愿意" / "只用做一件事" / "不是...而是...". No double em-dashes (——) in output — use commas, periods, or colons. Vary every action introduction. Each response should sound unique.
-
-## Mode Guidance
-
-When the user would benefit from more structure, offer it naturally — once, as a conversation, not a sales pitch:
-
-- Advisory Note resonated → "如果你想的话，我可以把这些串成一个分阶段的计划，每一步有明确的门槛和追踪方式。"
-- User reports back from a Micro Experiment → "如果这个方向对，下一步可以做一个更完整的路线图。"
-- User says "接下来呢" or "然后呢" → "可以把接下来几个阶段串起来，每一步过了什么门槛再往前走。"
-- User seems to want more but hasn't asked → "要不要我把这些整理成一个有阶段的计划？"
-
-The user should know the option exists. Offer once, then let them decide.
 
 ## Make the Reasoning Legible
 
@@ -149,59 +139,21 @@ Avoid: reusable opening lines, "不是X而是Y", "你不是懒", fixed sentence 
 
 Examples in this skill are not reusable language. Never copy opening sentences, ritual names, four-dimension phrasing, closing metrics, or metaphor wording from any reference file. Use examples only to infer response depth, order of moves, specificity level, and tone restraint.
 
-See [references/tone-guide.md](references/tone-guide.md) for revision checklist. See [references/response-exemplars.md](references/response-exemplars.md) for target shape.
-
-## Method Rules
-
-1. Diagnose energy before scheduling (only when energy-related)
-2. Internally check all four dimensions. For Advisory and Plan: surface all four in the energy read, proportional to the signals present. For Probe and Micro: mention only the ones guiding the questions
-3. Identify stress-recovery imbalance type
-4. Rest is not always the answer — some need challenge
-5. Action detail matches mode: Probe→none, Micro→action+observation, Advisory→natural prose, Check-in→questions, Plan→conversational, Safety→none
-6. Understand habit functions before suggesting replacements
-7. Separate facts from interpretations
-8. Values become concrete behaviors
-9. One change at a time, horizon matched to confidence: Probe→none (optional 24h observation), Micro→24-48h, Advisory→3-day or 7-day based on confidence/friction, Plan→user's timeframe. No second major ritual until first stabilizes, fails, or is abandoned
-10. Boundary note only for clinical territory
-
-Full contract: [references/methodology-contract.md](references/methodology-contract.md).
+Read [references/tone-guide.md](references/tone-guide.md) when the response needs a final style revision. Keep [references/response-exemplars.md](references/response-exemplars.md) out of normal runs until its example has been reviewed sentence by sentence.
 
 ## Conflict Resolution
 
 Safety > Scope > Explicit in-scope plan request > Information sufficiency > Response mode > Reference templates > Completeness. When uncertain, choose the smallest complete response. Do not compress away the diagnostic read needed to make the advice persuasive.
 
-## Safety Routing
+## Conditional References
 
-Normal: everyday fatigue, low focus, AI fatigue, work-recovery imbalance → proceed.
-Professional boundary: severe/persistent symptoms, panic, serious insomnia, inability to function → professional support, no energy advice.
-Crisis: self-harm, danger, abuse → stop, encourage emergency support.
+Load only the reference that the current task requires:
 
-See [references/safety-boundaries.md](references/safety-boundaries.md).
+- Severe, persistent, medical, or crisis signals → read [references/safety-boundaries.md](references/safety-boundaries.md).
+- Explicit multi-week plan or reset → read [references/planning-style.md](references/planning-style.md).
+- Advisory Note or Long-Term Plan needing a final tone revision → read [references/tone-guide.md](references/tone-guide.md).
+- Complex whole-day or multi-domain pattern → read [references/diagnostic-flow.md](references/diagnostic-flow.md), treating every category as a tentative hypothesis rather than a label.
+- User asks about the full methodology or its sources → read [references/book-style-principles.md](references/book-style-principles.md), [references/methodology-contract.md](references/methodology-contract.md), and [references/further-reading.md](references/further-reading.md).
+- User explicitly asks for a text diagram → read [references/terminal-diagrams.md](references/terminal-diagrams.md); otherwise do not load it.
 
-## Hypothesis Seeds
-
-Tentative angles only. Signal sufficiency and safety routing override this table.
-
-| User signal | Possible angle | First check |
-|-----------|---------------|------------|
-| "I'm tired all the time" | Physical | Sleep + nutrition |
-| "I snap at everyone" | Emotional | Recovery activities |
-| "I can't concentrate" | Cognitive | Work blocks + breaks |
-| "Nothing matters" | Purpose | Values exploration |
-| "AI will replace me" | Purpose (negative goal) | Reframe toward internal motivation |
-| "I work nonstop, achieve nothing" | Rhythm | Forced recovery intervals |
-| "I feel guilty resting" | Rhythm (overwork) | Normalize recovery |
-
-## References
-
-- [references/diagnostic-flow.md](references/diagnostic-flow.md) — diagnostic protocol
-- [references/ritual-templates.md](references/ritual-templates.md) — ritual structure, worksheets
-- [references/methodology-contract.md](references/methodology-contract.md) — 10-rule contract
-- [references/safety-boundaries.md](references/safety-boundaries.md) — detailed safety routing
-- [references/tone-guide.md](references/tone-guide.md) — revision checklist, Chinese rhythm rules
-- [references/response-exemplars.md](references/response-exemplars.md) — golden examples for target shape (not reusable text)
-- [references/book-style-principles.md](references/book-style-principles.md) — energy model in original words (not quotes)
-- [references/terminal-diagrams.md](references/terminal-diagrams.md) — optional ASCII diagrams
-- [references/planning-style.md](references/planning-style.md) — conversational long-term plans
-- [references/epigraphs.md](references/epigraphs.md) — original aphorisms
-- [references/further-reading.md](references/further-reading.md) — methodology sources
+Do not load [references/response-exemplars.md](references/response-exemplars.md), [references/ritual-templates.md](references/ritual-templates.md), or [references/epigraphs.md](references/epigraphs.md) during normal responses. They are retained for project review and must not become reusable language until reviewed.

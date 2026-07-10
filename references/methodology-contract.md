@@ -1,19 +1,19 @@
 # Methodology Contract
 
-> Derived from *The Power of Full Engagement* (Loehr & Schwartz, 2003).
+> Inspired by *The Power of Full Engagement* (Loehr & Schwartz, 2003) and broader energy-management literature.
 > These 10 rules define the boundaries of good energy advice. Within these boundaries, use your full judgment. The rules tell you what not to miss; your intelligence decides how to express it.
 
 ## Contents
 
-- [Rule 1: Diagnose Energy Before Scheduling Time](#rule-1-diagnose-energy-before-scheduling-time)
-- [Rule 2: All Four Energy Dimensions Must Be Considered](#rule-2-all-four-energy-dimensions-must-be-considered)
-- [Rule 3: Diagnose Stress-Recovery Imbalance Type](#rule-3-diagnose-stress-recovery-imbalance-type)
+- [Rule 1: Read Energy Before Scheduling Time](#rule-1-read-energy-before-scheduling-time)
+- [Rule 2: All Four Energy Dimensions Must Be Internally Considered](#rule-2-all-four-energy-dimensions-must-be-internally-considered)
+- [Rule 3: Form a Stress-Recovery Working Hypothesis](#rule-3-form-a-stress-recovery-working-hypothesis)
 - [Rule 4: Rest Is Not the Only Answer](#rule-4-rest-is-not-the-only-answer)
-- [Rule 5: All Recommendations Must Land as Positive Rituals](#rule-5-all-recommendations-must-land-as-positive-rituals)
+- [Rule 5: Match Ritual Detail to Response Mode](#rule-5-match-ritual-detail-to-response-mode)
 - [Rule 6: Bad Habits Have Short-Term Functions](#rule-6-bad-habits-have-short-term-functions)
 - [Rule 7: Separate Facts from Interpretations](#rule-7-separate-facts-from-interpretations)
 - [Rule 8: Values Must Translate to Behaviors](#rule-8-values-must-translate-to-behaviors)
-- [Rule 9: Change One Major Behavior at a Time](#rule-9-change-one-major-behavior-at-a-time)
+- [Rule 9: One Change at a Time, Length Matched to Mode](#rule-9-one-change-at-a-time-length-matched-to-mode)
 - [Rule 10: Safety Boundaries](#rule-10-safety-boundaries)
 
 ## Rule 0: Scope and Safety Before Method
@@ -23,9 +23,9 @@ Before applying the energy protocol, check:
 2. Are there severe, persistent, clinical, or crisis signals?
 
 If (1) is no → do not use the skill protocol.
-If (2) is yes → use Safety Routing before any energy diagnosis.
+If (2) is yes → use Safety Routing before any energy read.
 
-## Rule 1: Diagnose Energy Before Scheduling Time
+## Rule 1: Read Energy Before Scheduling Time
 
 When the user asks for scheduling because of low energy, poor focus, fatigue, motivation collapse, recovery problems, study rhythm collapse, or sustainable-performance concerns, do not output a schedule first. First assess the relevant energy state. Internally consider physical, emotional, cognitive, and purpose dimensions, but surface only what the response mode requires. If the user asks only for generic task ordering or calendar logistics with no energy signal, stay out of this protocol.
 
@@ -38,19 +38,18 @@ Internally check all four dimensions. In visible output, mention only the dimens
 - **Mental / Cognitive** (focus, realistic optimism, creativity, time management)
 - **Purpose / Values** (meaning, values alignment, mission, integrity)
 
-## Rule 3: Diagnose Stress-Recovery Imbalance Type
+## Rule 3: Form a Stress-Recovery Working Hypothesis
 
-Classify the user into one or more:
-- Over-stressed, under-recovered
-- Under-challenged, over-rested (atrophy)
-- Physical recovery deficit
-- Emotional recovery deficit
-- Mental recovery deficit
-- Purpose/meaning disconnection
+Consider one or more tentative patterns without labeling the user:
+- Demand appears to exceed recovery
+- Too little meaningful challenge or traction
+- Possible physical recovery gap
+- Possible emotional recovery gap
+- Possible cognitive recovery gap
+- Possible purpose or meaning disconnection
 
 ## Rule 4: Rest Is Not the Only Answer
 
-The book is not "restism." It equally emphasizes training and capacity expansion.
 Distinguish: recovery needed vs. small-dose challenge needed vs. recover-then-challenge vs. clarify-purpose-first.
 
 ## Rule 5: Match Ritual Detail to Response Mode

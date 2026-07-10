@@ -17,7 +17,7 @@ Help the user identify their core values and construct a vision statement.
 
 ### Step 1: Identify Core Values (pick 5)
 
-From the book's deep values inventory: integrity, generosity, courage, humility, compassion, loyalty, perseverance, excellence, family, health, respect, kindness, creativity, service, growth, honesty, gratitude, discipline.
+Inspired by values inventories used across energy-management and behavior-design literature: integrity, generosity, courage, humility, compassion, loyalty, perseverance, excellence, family, health, respect, kindness, creativity, service, growth, honesty, gratitude, discipline.
 
 ### Step 2: Life Lessons (3 questions)
 
@@ -37,7 +37,7 @@ My work vision (reflecting my values):
 [Present-tense statement of how you want to work, grounded in your values]
 ```
 
-Example (from the book's Roger case):
+Example inspired by common energy-management coaching cases:
 > "My wife and children are the most important things in my life. When we are together, I commit to giving them all my energy and attention. To do this, I must take care of my body. At work, I hold myself to high standards. As a leader, I demonstrate my values — kindness, caring, and integrity. Whatever I do, I do wholeheartedly."
 
 ## Obstacle Worksheet

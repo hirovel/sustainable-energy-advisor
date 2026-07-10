@@ -1,6 +1,6 @@
 # Response Exemplars
 
-These examples follow the book's diagnostic style: observational, specific, grounded in mechanism. The warmth comes from accuracy, not from comfort language. Note the sentence rhythm — medium-length explanatory sentences alternate with shorter judgment sentences. Transitions are natural, not formulaic. Rituals are described as concrete plans with specific times and behaviors, not as abstract suggestions.
+These examples are inspired by diagnostic, mechanism-aware coaching styles: observational, specific, and grounded in the user's details. The warmth comes from accuracy, not from comfort language. Note the sentence rhythm — medium-length explanatory sentences alternate with shorter judgment sentences. Transitions are natural, not formulaic. Rituals are described as concrete plans with specific times and behaviors, not as abstract suggestions.
 
 ## Example 1: Broad fatigue → Advisory Note
 
