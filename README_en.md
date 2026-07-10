@@ -68,7 +68,6 @@ Restart the session if the host does not discover the skill immediately. Host lo
 >
 > Leave sleep, exercise, and the long-term plan unchanged for now. Three workdays can show whether this variable has a noticeable effect without changing so many things that the result becomes hard to interpret.
 
-The example demonstrates reasoning order and response depth, not wording that the skill reuses as a template.
 
 ## What makes the method different
 
