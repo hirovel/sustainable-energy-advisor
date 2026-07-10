@@ -18,7 +18,7 @@ It does not respond to “I feel tired” with an immediate list of sleep, exerc
 
 - **Locate the problem.** Distinguish physical capacity, emotional drain, fragmented attention, and loss of direction instead of reducing everything to discipline.
 - **Understand the reason behind the advice.** Explain the mechanism relevant to the user's situation before discussing action.
-- **Begin with one small experiment.** Test one informative variable instead of redesigning an entire life at once.
+- **Begin with one small experiment.** Test one clearly scoped direction with observable feedback instead of redesigning an entire life at once.
 - **Adapt to feedback.** Reinforce what works; when something fails, review friction and the original hypothesis instead of repeating the same advice.
 - **Build a phased plan when needed.** Turn long-term rhythm recovery into a reviewable path rather than a rigid schedule.
 
@@ -62,12 +62,13 @@ Restart the session if the host does not discover the skill immediately. Host lo
 
 ### Assistant (excerpt)
 
-> You still have four hours of work, but “finish the current task” and “check whether a better tool exists” are competing for the same attention. The fear of falling behind keeps pulling attention back toward tool comparison, and every switch requires another return to the task. There is not enough physical information to make a claim about sleep or baseline capacity.
+> You have noticed a specific tension: AI has made coding faster, while “is there a better model or tool?” has become an always-open doorway that keeps pulling attention away from the current task. Across the four energy dimensions, the clearest signals are emotional and cognitive; there is not enough physical information to make a claim about sleep or baseline capacity.
 >
-> I would first test whether switching is the main leak. For the next three workdays, write down the chosen tool and the task's completion condition before starting. Do not compare models until the task ends. When the urge to refresh appears, make a mark without switching. At the end of each day, check three things: actual switches, the longest uninterrupted work period, and whether the task materially moved forward.
+> *The more tools you have, the more attention needs a boundary. The value of staying current ultimately has to return to the work in front of you.*
 >
-> Leave sleep, exercise, and the long-term plan unchanged for now. Three workdays can show whether this variable has a noticeable effect without changing so many things that the result becomes hard to interpret.
+> For the next hour, write one clear delivery outcome and continue with the model and tools already open. When the urge to refresh or compare appears, add it to a “check later” list and return to the code. At the end, notice how far the outcome moved and whether your mind can return to the same problem more easily than before.
 
+The example demonstrates reasoning order and response depth, not wording that the skill reuses as a template.
 
 ## What makes the method different
 
@@ -79,7 +80,7 @@ The skill considers physical, emotional, cognitive, and purpose energy internall
 
 Continuous demand without recovery can deplete capacity, while prolonged underuse without appropriate challenge can make starting harder. The skill tries to distinguish recovery, re-engagement, and loss of direction.
 
-### One major variable at a time
+### Test one primary direction at a time
 
 An experiment may last 24–48 hours, three days, or seven days. Duration follows the available evidence and expected friction rather than a universal seven-day template.
 
